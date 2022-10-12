@@ -26,7 +26,7 @@
         </div>
     </nav>
     <section class="container">
-        <form method='post' enctype='multipart/form-data' encoding='multipart/form-data'>
+        <form id="main_form" method='post' enctype='multipart/form-data' encoding='multipart/form-data'>
             <div class="input-class">
                 <div>
                     <img src="/static/squarefactory-logo-h.svg" alt="square factory logo">
@@ -64,14 +64,14 @@
         $(document).ready(function () {
 
             $("#main_form").submit(function (e) {
-                var formData = new FormData();
+                var formData = new FormData($('#main_form')[0]);
                 $("#submit-button").hide()
                 $("#loading").removeClass("hide")
                 e.preventDefault();
                 $.ajax({
                     type: 'POST',
                     url: '/',
-                    data: $('#my-text').val(),
+                    data: formData,
                     contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
                     processData: false,
                     success: function (msg) {

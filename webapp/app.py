@@ -1,7 +1,7 @@
 import os
 from i2_client import I2Client
 from flask import Flask, request, jsonify, render_template
-from flask_debugtoolbar import DebugToolbarExtension
+# from flask_debugtoolbar import DebugToolbarExtension
 from uuid import uuid4
 import logging
 logging.basicConfig(level=logging.DEBUG)
