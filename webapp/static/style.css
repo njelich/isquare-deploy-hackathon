@@ -1,0 +1,176 @@
+nav img {
+    height: 30px;
+}
+
+nav span {
+    position: relative;
+    top: 3px;
+    left: 0px;
+    color: #100538;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav {
+    height: 80px;
+    background-color: #dbfaf8 !important;
+}
+
+body {
+    background-color: #00c6acc7;
+}
+
+.input-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.input-class img {
+    width: 50%;
+    display: block;
+    margin: 0 auto 40px auto;
+    position: relative;
+    left: -15px
+}
+
+.input-class p {
+    font-size: 20px;
+}
+
+.input-class p span {
+    font-weight: bold;
+}
+
+.input-class>div {
+    width: 50%;
+    text-align: center;
+}
+
+#my-text {
+    margin-bottom: 25px;
+}
+
+.input-class button {
+    background-color: #008b82;
+    border-color: #008b82;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.input-class button:hover {
+    background-color: #026962;
+    border-color: #026962;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 255px;
+    width: 255px;
+    position: relative;
+    top: -20px;
+    border: 2px solid #110641;
+    border-radius: 7px;
+}
+
+.image-div .placeholder-pic {
+    width: 33px;
+    color: #110641;
+    ;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #dbfaf8a1;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#prd-img {
+    width: 100%;
+}
+
+.hide {
+    display: none!important;
+}
+
+#loading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#loading span {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #2d0303;
+    border-radius: 50%;
+    margin: 5px;
+    /* animation: jump .5s linear infinite; */
+}
+
+.a {
+    animation: a 1s linear infinite;
+}
+
+.b {
+    animation: b 2s linear infinite;
+}
+
+.c {
+    animation: a 1s linear infinite;
+}
+
+.d {
+    animation: b 2s linear infinite;
+}
+
+.e {
+    animation: a 1s linear infinite;
+}
+
+@keyframes a {
+    0% {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(-20px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes b {
+    0% {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(-20px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
