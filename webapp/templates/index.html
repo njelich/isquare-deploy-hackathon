@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SF paint</title>
+    <title>SF playground</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -21,19 +21,18 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/static/squarefactory-logo-h.svg" alt="square factory logo"><span>Paint</span>
+                <img src="/static/squarefactory-logo-h.svg" alt="square factory logo"><span>Playground</span>
             </a>
         </div>
     </nav>
     <section class="container">
-        <form method="POST" id="main_form">
+        <form method='post' enctype='multipart/form-data' encoding='multipart/form-data'>
             <div class="input-class">
                 <div>
                     <img src="/static/squarefactory-logo-h.svg" alt="square factory logo">
-                    <p><span>SF pain</span> uses the AI model DALL·E Mini using isquare</p>
-                    <input type="text" class="form-control" id="my-text" name="my_text"
-                        placeholder="What do you want to see?" required>
-                    <button type="submit" class="btn btn-primary" id="submit-button">Impress Me</button>
+                    <p><span>SF playground</span> uses a Picture to Picture AI model running on isquare</p>
+                    <input type="file" name="file" /><br /><br />
+                    <button type="submit" class="btn btn-primary" id="submit-button">Do It</button>
                     <div class="hide" id="loading">
                         <span class="a"></span>
                         <span class="b"></span>

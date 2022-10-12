@@ -20,6 +20,10 @@ body {
     background-color: #00c6acc7;
 }
 
+.infile {
+    width: 210px;
+}
+
 .input-class {
     display: flex;
     justify-content: center;
@@ -106,7 +110,7 @@ footer p {
 }
 
 .hide {
-    display: none!important;
+    display: none !important;
 }
 
 #loading {
