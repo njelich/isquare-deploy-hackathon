@@ -19,7 +19,13 @@ If you are struggling with any of the points of the hackathon, do not hesitate t
 The following setup steps should be completed before starting:
 - Create an [iSquare](app.isquare.ai) account. 
 - Clone the project repositories: [The hackathon repo](https://github.com/SquareFactory/isquare-deploy-hackathon) and [the python client for iSquare](https://github.com/SquareFactory/i2-cli)
-- Install the python dependencies as well as the python cli
+- Install the python dependencies as well as the python cli:
+```bash
+pip install -r face-pixeliser/requirements.txt
+pip install webapp/requirements.txt
+cd i2-cli
+pip install -e .
+```
 
 ## Deploy
 We have provided you with the code of a model which, given an input image, pixelizes the faces on the image and then returns it.
