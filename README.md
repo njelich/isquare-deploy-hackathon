@@ -62,9 +62,18 @@ A user should be able to take a picture with their webcam, which is sent for inf
 3. Using the I2Client class from the i2-cli, connect the backend to the deployed model.
 4. Test that the website is working properly.
 
-[optional] In a real world production environment, the data evolves constantly, and the models should to. To demonstrate how easy this is with iSquare deploy, we will change the deployed model by a similar one.
-1. Modify the code of the pixeliser so that faces are replaced with correctly sized emojis instead of being pixelized.
-2. Deploy the model using iSquare deploy
-3. Replace the acesses in your code.
-4. Test your model!
+### Optional tasks
+In a real world production environment, the data evolves constantly, and the models should to. To demonstrate how easy this is with iSquare deploy, we will change the deployed model by a similar one.
+
+1. The current code resizes images per default to 200x200. Modify it so that it resizes while keeping the shape of the image and resizing the largest edge to 200px.
+2. Modify the code of the pixeliser so that faces are replaced with correctly sized emojis instead of being pixelized.
+3. Deploy the model using iSquare deploy
+4. Replace the acesses in your code.
+5. Test your model!
+
+Some aplications require real time streaming and inference on a video flux. For example, one could try to automatically detect violence by processing a constant video stream from a security camera.
+
+1. Modify the web application to stream your webcam at 15fps to the deployed and display the original image and the result on the frontend of the web application.
+
+
 

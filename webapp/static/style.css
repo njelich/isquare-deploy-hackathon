@@ -20,7 +20,8 @@ body {
     background-color: #00c6acc7;
 }
 
-.infile {
+
+e .infile {
     width: 210px;
 }
 
@@ -68,10 +69,23 @@ body {
     border-color: #026962;
 }
 
-.image-div {
+
+.box {
+    height: auto;
+    width: 610px;
+    margin: auto;
+}
+
+.row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.cell {
+    flex: 1 1 200px;
+    padding: 10px
 }
 
 .image-div>div {
@@ -106,6 +120,10 @@ footer p {
 }
 
 #prd-img {
+    width: 100%;
+}
+
+#inp-img {
     width: 100%;
 }
 
