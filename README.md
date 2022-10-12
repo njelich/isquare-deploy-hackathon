@@ -28,7 +28,7 @@ We have provided you with the code of a model which, given an input image, pixel
 First, we'd like you to play with the provided scripts and understand how they work:
 - Perform an inference using the [provided image](face-pixeliser/imgs/example_01.jpg)
 - Take a screenshot with your webcam and see if you can pixelise your face
-- [optional] modify the code so that faces are replaced with correctly sized emojis instead of being pixelized.
+- [optional] Modify the code so that faces are replaced with correctly sized emojis instead of being pixelized.
 
 ### 2. Make the model isquare-compatible
 Now that you've gotten to know the model a bit, you will have to deploy it and make it available as an "API" using iSquare. Simply follow the steps and explanation given [here](https://docs.isquare.ai/deploy/deploy_with_isquare/1intro) and create the appropriate scripts. You should be able to do this easily on your own, but if you're stuck, we provide the [solution scripts](face-pixeliser/solution). The steps to take can be broken down to:
@@ -47,34 +47,18 @@ Now that your model is ready to be put into production, use the isquare web inte
 
 
 ### 4. Integrate your model in a production environment
-We will provide you with the url and access key to a deployed face pixeliser. 
+*Note: you will need a laptop with a webcam to run this tutorial*
+We will provide you with the url and access key to a deployed face pixeliser. We also provide you with the `.html` and `.css` files of a simple website. The goal of the website is the following:
+A user should be able to take a picture with their webcam, which is sent for inference to the face pixeliser. Both images are then displayed to the user via the web interface.
 
-Use an existing deployed model and interact with the deployed model through cli (streamio webcam) [25 minutes]
+1. Run the website and test it (it is not connected to the model yet). Explore the different files to understand what is where.
+2. Take a look at the [backend](webapp/app.py). 
+3. Using the I2Client class from the i2-cli, connect the backend to the deployed model.
+4. Test that the website is working properly.
 
-install the python cli and package
+[optional] In a real world production environment, the data evolves constantly, and the models should to. To demonstrate how easy this is with iSquare deploy, we will change the deployed model by a similar one.
+1. Modify the code of the pixeliser so that faces are replaced with correctly sized emojis instead of being pixelized.
+2. Deploy the model using iSquare deploy
+3. Replace the acesses in your code.
+4. Test your model!
 
-write a client to stream the webcam (use the provided example file)
-
-SOLUTION PRESENTATION [5 minutes]
-
-Workshop part 2 INTEGRATE WITH FLASK [50 minutes]
-
-Flask backend integration [30 minutes]
-
-Set up the example repository 
-
-Modify the config to the desired model 
-
-Run the frontend and backend services 
-
-Test the model 
-
-SOLUTION PRESENTATION [5 minutes]
-
-Bonus [If your fast]
-
-Modify the config to another model 
-
-Enjoy how the same code makes use of an other model 
-
-Open Question and Feedbak [10 minutes]
