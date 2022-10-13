@@ -110,7 +110,7 @@ class FacePixelizer:
                 box = box / scale
                 box = box.type(torch.int)
 
-                # Apply pixelization on faces
+                # Apply pixelization on faces TODO: turn to correctly sized emojis
                 img[box[1] : box[3], box[0] : box[2]] = pixelize(
                     img[box[1] : box[3], box[0] : box[2]]
                 )

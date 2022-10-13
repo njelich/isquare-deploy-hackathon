@@ -28,7 +28,10 @@ def predict():
             return "there is no file1 in form!"
         file = request.files["file"]
         image = get_image(file)
-        image = cv2.resize(image, (200, 200))
+        (h, w) = image.shape[:2]
+        # (height, width) = image.shape
+        # (width, height) TODO: resized to 200
+        image = cv2.resize(image, (200 * w / h, 200) if h > w else (200, 200 * h / w)) 
         img_name1 = "static/" + str(uuid4()) + ".png"
         cv2.imwrite(img_name1,image)
         success, output = client.inference(image)[0]
