@@ -1,6 +1,6 @@
 FROM alpineintuition/archipel-base-cpu:latest
 
-COPY requirements.txt requirements.txt
+COPY face-pixelizer/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 ARG FACE_PIXELIZER=/opt/face_pixelizer
