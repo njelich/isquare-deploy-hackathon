@@ -10,4 +10,3 @@ RUN cd ${FACE_PIXELIZER}
 RUN pip install -r requirements.txt
 
 ENV PYTHONPATH="${FACE_PIXELIZER}:${PYTHONPATH}"
-COPY "retinaface_mobilenet_0.25.pth" "${FACE_PIXELIZER}/retinaface_mobilenet_0.25.pth"
